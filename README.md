@@ -1,4 +1,4 @@
-#Redis Caching and Pub/Sub Demo
+# Redis Caching and Pub/Sub Demo
 
 This project demonstrates the integration of Redis for caching and pub/sub messaging in a full-stack application. The backend is built with Node.js and Express, using SQLite for persistent storage and Redis for caching and real-time messaging. The frontend is a React application that interacts with the backend via REST APIs and receives real-time updates through Socket.IO.
 Features
