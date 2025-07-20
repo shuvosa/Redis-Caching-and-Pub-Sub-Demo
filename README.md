@@ -8,7 +8,7 @@ Caching: Products are cached in Redis to reduce database load, with cache invali
 Real-time Updates: Uses Redis pub/sub to notify the frontend of product changes via Socket.IO.
 Custom Messaging: Publish and subscribe to custom Redis channels directly from the frontend.
 
-#Technologies Used
+# Technologies Used
 
 Backend: Node.js, Express, Redis, SQLite, Socket.IO
 Frontend: React, Socket.IO-client
@@ -20,7 +20,7 @@ git clone https://github.com/shuvosa/Redis-Caching-and-Pub-Sub-Demo.git
 cd your-repo-name
 ```
 
-#Install dependencies:
+# Install dependencies:
 
 For the backend:
 cd backend
@@ -76,7 +76,7 @@ The React app will run on http://localhost:3000.
 
 
 
-#Usage
+# Usage
 
 Add a Product:
 
