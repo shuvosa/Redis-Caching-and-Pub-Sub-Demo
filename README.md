@@ -100,20 +100,20 @@ The message appears in "Received Messages" if subscribed to the channel.
 
 ```
 
-#How Caching Works
+# How Caching Works
 
 The backend checks Redis for cached products under the key all_products.
 If cached, it returns the data directly.
 If not cached, it fetches from SQLite, caches the result in Redis with a 1-hour TTL, and returns it.
 Adding a product invalidates the cache, ensuring fresh data on the next fetch.
 
-#How Pub/Sub Works
+# How Pub/Sub Works
 
 Adding a product publishes a message to the product_updates Redis channel.
 The backend subscribes to this channel and relays messages to Socket.IO clients.
 The frontend updates the product list in real-time upon receiving these events.
 Custom messages can be published to channels like custom_channel and displayed on the frontend.
 
-#Contributing
+# Contributing
 Contributions are welcome! Please open an issue or submit a pull request for improvements or bug fixes.
 
